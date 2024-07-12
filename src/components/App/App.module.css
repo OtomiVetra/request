@@ -1,0 +1,44 @@
+/* App.module.css */
+
+.app {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+	background-color: #eaeaea;
+	min-height: 100vh;
+	box-sizing: border-box;
+}
+
+.header {
+	font-size: 2rem;
+	margin-bottom: 20px;
+	color: darkcyan;
+	text-align: center;
+}
+
+.todoListContainer {
+	width: 100%;
+	max-width: 600px;
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	color: darkcyan;
+}
+
+.todoList {
+	list-style: none;
+	padding: 0;
+}
+
+.todoListItem {
+	padding: 10px 0;
+	border-bottom: 1px solid #ccc;
+	font-size: 1.2rem;
+}
+
+.todoListItem:last-child {
+	border-bottom: none;
+}
