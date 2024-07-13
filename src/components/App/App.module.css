@@ -1,0 +1,146 @@
+.app {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-color: #2e2e2e;
+	padding: 20px;
+}
+
+.todoListContainer {
+	background-color: #3e3e3e;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	width: 100%;
+	max-width: 600px;
+	box-sizing: border-box;
+}
+
+.header {
+	font-size: 24px;
+	margin-bottom: 20px;
+	text-align: center;
+	color: #fff;
+}
+
+.searchInput {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid #555;
+	border-radius: 5px;
+	background-color: #4e4e4e;
+	color: #fff;
+	box-sizing: border-box;
+}
+
+.button {
+	display: inline-block;
+	padding: 10px;
+	margin: 5px;
+	font-size: 16px;
+	color: #fff;
+	background-color: #666;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.button:hover {
+	background-color: #555;
+}
+
+.todoList {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.todoListItem {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	border-bottom: 1px solid #555;
+	color: #fff;
+}
+
+.todoListItem:last-child {
+	border-bottom: none;
+}
+
+.todoText {
+	flex-grow: 1;
+	margin-right: 10px;
+}
+
+.buttonGroup {
+	display: flex;
+	gap: 10px;
+}
+
+.editForm {
+	display: flex;
+	gap: 10px;
+	width: 100%;
+}
+
+.editForm input {
+	flex-grow: 1;
+	padding: 10px;
+	border: 1px solid #555;
+	border-radius: 5px;
+	background-color: #4e4e4e;
+	color: #fff;
+	box-sizing: border-box;
+}
+
+.editForm button {
+	padding: 10px;
+	font-size: 16px;
+	color: #fff;
+	background-color: #28a745;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.editForm button:hover {
+	background-color: #218838;
+}
+
+@media (max-width: 600px) {
+	.todoListContainer {
+		padding: 10px;
+	}
+
+	.header {
+		font-size: 20px;
+	}
+
+	.searchInput {
+		padding: 8px;
+		font-size: 14px;
+	}
+
+	.button {
+		padding: 8px;
+		font-size: 14px;
+	}
+
+	.todoListItem {
+		padding: 8px;
+	}
+
+	.editForm input {
+		padding: 8px;
+		font-size: 14px;
+	}
+
+	.editForm button {
+		padding: 8px;
+		font-size: 14px;
+	}
+}
